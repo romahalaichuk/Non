@@ -1,1 +1,1 @@
-https://github.com/romahalaichuk/Non.git
+https://romahalaichuk.github.io/Non/
