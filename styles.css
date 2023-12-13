@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: url(/pictures/tlo-do-strony-internetowej1.jpg);
+	background-image: url(./pictures/tlo-do-strony-internetowej1.jpg);
 	font-family: Arial, sans-serif;
 }
 .tytul {
@@ -13,16 +13,12 @@ body {
 	font-weight: 900;
 	color: rgb(147, 159, 18);
 	margin: 30px;
-	animation: pulsate 2s infinite alternate; /* Animacja */
-	transition: background-color 0.5s; /* Efekt przejścia dla tła */
-	background-image: linear-gradient(
-		45deg,
-		#ff7300,
-		#eaeaea
-	); /* Tło gradientowe */
-	background-size: 200% 200%; /* Rozmiar tła */
-	color: transparent; /* Ukryj tekst */
-	-webkit-background-clip: text; /* Przeźroczystość tekstu */
+	animation: pulsate 2s infinite alternate;
+	transition: background-color 0.5s;
+	background-image: linear-gradient(45deg, #ff7300, #eaeaea);
+	background-size: 200% 200%;
+	color: transparent;
+	-webkit-background-clip: text;
 	background-clip: text;
 }
 
@@ -43,14 +39,10 @@ body {
 }
 
 .tytul:hover {
-	background-image: linear-gradient(
-		45deg,
-		#ff7300,
-		#fff
-	); /* Zmień tło na hover */
-	color: rgb(147, 159, 18); /* Pokaż tekst na hover */
+	background-image: linear-gradient(45deg, #ff7300, #fff);
+	color: rgb(147, 159, 18);
 }
-/* Styl pisania bota i użytkownika */
+
 .message {
 	display: flex;
 	align-items: center;
@@ -60,22 +52,20 @@ body {
 .user {
 	justify-content: flex-end;
 	text-align: right;
-	color: rgb(207, 207, 230); /* Możesz dostosować kolor tekstu użytkownika */
+	color: rgb(207, 207, 230);
 }
 
-/* Styl dla przycisku odtwarzania dźwięku */
 .audio-button {
 	display: block;
 	margin-left: 10px;
 	margin-top: 10px;
-	margin-bottom: 5px; /* Przesunięcie przycisku poniżej tekstu zagadki */
+	margin-bottom: 5px;
 	font-size: 24px;
 	border: none;
 	background-color: blue;
 	cursor: pointer;
 }
 
-/* Styl dla wiadomości od bota */
 .message.bot {
 	background-color: #1f1a1a;
 	border-radius: 5px;
@@ -88,7 +78,6 @@ body {
 	); /* Gradient tła */
 }
 
-/* Styl dla wiadomości od użytkownika */
 .message.user {
 	background-color: #1f1a1a;
 	border-radius: 5px;
@@ -99,10 +88,9 @@ body {
 		to left,
 		rgba(31, 26, 26, 1) 20%,
 		transparent 50%
-	); /* Gradient tła */
+	);
 }
 
-/* Styl dla przycisku "Wyślij" */
 #send-button {
 	background-color: #3498db;
 	color: white;
@@ -113,22 +101,18 @@ body {
 	margin-top: 5px;
 }
 
-/* Styl dla pola wprowadzania tekstu */
 #user-input {
 	background-color: #2a1e1e;
-	width: calc(
-		100% - 90px
-	); /* Szerokość zostaje poprawiona po dodaniu przycisku odtwarzania audio */
+	width: calc(100% - 90px);
 	padding: 8px;
 	border: 1px solid #918e8e9d;
 	border-radius: 5px;
 	margin-right: 5px;
 }
 #user-input::placeholder {
-	color: rgb(255, 255, 255); /* Tutaj możesz ustawić kolor, np. zielony */
+	color: rgb(255, 255, 255);
 }
 
-/* Styl dla chat history */
 #chat-history {
 	max-height: 400px;
 	overflow-y: scroll;
@@ -137,12 +121,11 @@ body {
 .bot {
 	justify-content: flex-start;
 	text-align: left;
-	color: rgb(255, 252, 252); /* Możesz dostosować kolor tekstu bota */
+	color: rgb(255, 252, 252);
 }
 
-/* Dodajemy pseudoelement ::before do klasy .user */
 .user::before {
-	content: ""; /* Pusty pseudoelement dla bota */
+	content: "";
 	margin-right: 5px;
 	width: 15px;
 	height: 5px;
@@ -151,9 +134,8 @@ body {
 	display: inline-block;
 }
 
-/* Dodajemy pseudoelement ::before do klasy .bot */
 .bot::before {
-	content: ""; /* Pusty pseudoelement dla bota */
+	content: "";
 	margin-right: 5px;
 	width: 15px;
 	height: 5px;
@@ -162,7 +144,6 @@ body {
 	display: inline-block;
 }
 
-/* Styl pisania koniec */
 .capitalize-first {
 	text-transform: capitalize;
 }
@@ -188,12 +169,12 @@ body {
 .input-area {
 	margin-top: 10px;
 	display: flex;
-} /* Kolor tekstu w polu wprowadzania tekstu */
+}
 input[type="text"] {
-	color: red; /* Tutaj możesz ustawić wybrany kolor */
+	color: red;
 }
 input[type="text"]:focus {
-	color: rgb(236, 236, 244); /* Tutaj możesz ustawić inny kolor */
+	color: rgb(236, 236, 244);
 }
 input[type="text"] {
 	flex: 1;
