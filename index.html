@@ -1,105 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-			rel="stylesheet" />
-		<title>Ice Cream Company</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-			integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-			crossorigin="anonymous" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@400;700;900&family=Seymour+One&display=swap"
-			rel="stylesheet" />
-		<link rel="icon" href="/src/images/favicon/favicon.ico" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Przykładowy Chatbot</title>
 	</head>
 	<body>
-		<section class="about-section" id="about">
-			<div class="container">
-				<p class="about-paragraph">tradition and love</p>
-				<h2 class="header-about">how it’s made?</h2>
-
-				<div class="main-content">
-					<div class="cow-photo">
-						<img
-							class="photo-2"
-							src="/src/images/photo-cow-1x.jpg"
-							srcset="/src/images/photo-cow-2x.jpg 2x"
-							alt="cow photo" />
-					</div>
-
-					<div class="right-section">
-						<div class="description">
-							<p class="descrition-text">
-								Ice is a place where you will become not only a little happier,
-								but also healthier. Health is the main value for us, and we
-								follow it when creating our handmade desserts.
-							</p>
-							<p class="descrition-text">
-								We use traditional recipes and 100% natural ingredients. Our
-								products are so natural that they can be given to children from
-								the age of three years. Sweets lovers can expect 55 types of ice
-								cream, 15 types of coffee and 23 milkshakes.
-							</p>
-							<p class="descrition-text">
-								This is enough to choose ice cream and coffee for any mood!
-							</p>
-						</div>
-						<button
-							type="button"
-							data-modal-open="7"
-							class="about-btn about-btn-text">
-							Read more
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="12"
-								height="12"
-								viewBox="0 0 12 12"
-								fill="none"
-								class="about-btn-svg">
-								<path
-									d="M3.96959 1.22698C3.82899 1.36762 3.75 1.55835 3.75 1.75723C3.75 1.9561 3.82899 2.14683 3.96959 2.28748L7.68209 5.99998L3.96959 9.71247C3.83297 9.85393 3.75738 10.0434 3.75908 10.24C3.76079 10.4367 3.83967 10.6248 3.97873 10.7638C4.11778 10.9029 4.30589 10.9818 4.50254 10.9835C4.69919 10.9852 4.88864 10.9096 5.03009 10.773L9.27284 6.53022C9.41344 6.38958 9.49243 6.19885 9.49243 5.99998C9.49243 5.8011 9.41344 5.61037 9.27284 5.46973L5.03009 1.22698C4.88944 1.08637 4.69871 1.00739 4.49984 1.00739C4.30097 1.00739 4.11024 1.08637 3.96959 1.22698Z"
-									fill="black" />
-							</svg>
-						</button>
-					</div>
+		<div class="tytul-a">
+			<p class="tytul">Gra w podróżnika</p>
+		</div>
+		<div class="chat">
+			<div class="chat-window">
+				<div class="chat-history" id="chat-history">
+					<!-- Wiadomości chatbota będą tu wyświetlane -->
+				</div>
+				<div class="input-area">
+					<input
+						type="text"
+						id="user-input"
+						class="capitalize-first"
+						placeholder="Twoja odpowiedż" />
+					<button id="send-button">Wyślij</button>
 				</div>
 			</div>
-		</section>
-		<!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-		<header><include src="./partials/header.html"></include></header>
-
-		<include src="./partials/modal.html"></include>
-
-		<script src="./js/buy-now.js" type="module"></script>
-		<script src="./js/buy-now-menu.js" type="module"></script>
-		<script src="./js/francise.js" type="module"></script>
-		<script src="./js/ice-coffe.js" type="module"></script>
-		<script src="./js/icecream.js" type="module"></script>
-		<script src="./js/milkshake.js" type="module"></script>
-		<script src="./js/our-locations.js" type="module"></script>
-		<script src="./js/read-more.js" type="module"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<script>
-			const swiper = new Swiper(".swiper", {
-				direction: "horizontal",
-				loop: true,
-
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-			});
-		</script>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

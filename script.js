@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const riddles = [
 		{
-			question: "Kiedy Romek miał najbardziej fantastyczne spotkania? (data)",
+			question: "Kiedy ona miała najbardziej fantastyczne spotkania? (data)",
 			answer: "19",
 			hints: [
 				"Wtedy on też ma urodziny",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			],
 		},
 		{
-			question: "Kogo on kocha?(Imię)",
+			question: "Kogo ona kocha?(Imię)",
 			answer: "Kamil",
 			hints: [
 				"Jest przystojny.",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			],
 		},
 		{
-			question: "Gdzie on mieszka (dzielnica)?",
+			question: "Gdzie ona mieszka (dzielnica)?",
 			answer: "Żoliborz",
 			hints: [
 				"Blisko Arkadii.",
@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		{
 			question:
-				"Czy już wiesz o kim mowa? i kim on jest? Napewno chcesz napisać go imię?",
-			answer: "Roman",
+				"Czy już wiesz o kim mowa? i kim ona jest? Napewno chcesz napisać go imię?",
+			answer: "Marta",
 			hints: [
-				"Zaczyna się na 'R' a kończy się na 'N' ",
-				"Może być podobny do Romantico",
+				"Zaczyna się na 'M' a kończy się na 'a' ",
+				"Taka jest gatunek kotów",
 				"Rzadko używane imię",
 			],
 		},
